@@ -31,8 +31,18 @@ const App = () =>
         <div className='app'>
             <h1>Movie Buddy 🎬</h1>
             <div className="search">
-                <input type="search"
+                <input type="text"
                     name="search"
+                    onKeyUp={
+                        (e) =>
+                        {
+                            console.log(e.key);
+                            if (e.key === 'Enter')
+                            {
+                                searchMovies(keyword)
+                            }
+                        }
+                    }
                     id="searchField"
                     value={keyword}
                     placeholder='Search for movies'
@@ -47,11 +57,11 @@ const App = () =>
             </div>
 
             {
-                movies?.length === 0
+                !movies || movies?.length === 0
                     ?
                     (
                         <div className="empty">
-                            <h2>No movies found</h2>
+                            <h2>😔 </h2>
                         </div>
                     )
                     :

@@ -29,13 +29,7 @@ body {
 h1 {
     font-size: 3rem;
     letter-spacing: 0.9px;
-    background: linear-gradient(90deg,
-            rgba(249, 211, 180, 1) 0%,
-            rgba(249, 211, 180, 0) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: fit-content;
+    color: #fff;
 }
 
 .search {
@@ -45,8 +39,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 1.5rem 1.75rem;
+    padding: 1rem 1rem;
     border-radius: 3rem;
     background: #1f2123;
     -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
@@ -90,7 +83,6 @@ h1 {
 .empty {
     width: 100%;
     margin-top: 3rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +90,7 @@ h1 {
 
 .empty h2 {
     font-size: 1.25rem;
-    color: #f9d3b4;
+    color: #ffffff;
     font-family: var(--font-raleway);
 }
 
@@ -113,8 +105,8 @@ h1 {
 }
 
 .movie {
-    width: 310px;
-    height: 460px;
+    width: 285px;
+    height: 350px;
     margin: 1.5rem;
 
     position: relative;
@@ -132,7 +124,7 @@ h1 {
     width: 100%;
     opacity: 0;
     top: 0;
-    color: #f9d3b4;
+    color: #ffffff;
 }
 
 .movie:hover {
@@ -173,7 +165,7 @@ h1 {
 .movie div:nth-of-type(3) h3 {
     margin-top: 5px;
     font-family: "Roboto Slab", serif;
-    color: #f9d3b4;
+    color: #ffffff;
 }
 
 .movie:hover div:nth-of-type(2) {

@@ -3,7 +3,7 @@ const MovieCard = ((props) =>
 {
     const movie = props.movie;
     return (
-        <div className="movie">
+        <div className="movie" key={movie.imdbID}>
             <div>
                 <p>{movie.Year}</p>
             </div>
