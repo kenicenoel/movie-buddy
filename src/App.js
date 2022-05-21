@@ -47,7 +47,7 @@ const App = () =>
             </div>
 
             {
-                movies?.length == 0
+                movies?.length === 0
                     ?
                     (
                         <div className="empty">
